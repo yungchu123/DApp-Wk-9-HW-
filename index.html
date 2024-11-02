@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Money</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Transfer Money</h2>
+        <input type="text" id="fromAddress" placeholder="Sender Address">
+        <input type="text" id="toAddress" placeholder="Recipient Address">
+        <input type="number" id="amount" placeholder="Amount (ETH)">
+        <button onclick="transfer()">Transfer</button>
+        <button onclick="viewTransaction()">View Transaction</button>
+        <button onclick="goToMain()">Main</button>
+        <p id="status"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
